@@ -17,8 +17,8 @@ class LED8x8():
     self.shifter = Shifter(data,latch,clock)
 
   def display(self):
-    self.shifter.shiftByte(LED8x8.pattern2[0])
-    self.shifter.shiftByte(LED8x8.pattern1[0]) #send second byte
+    self.shifter.shiftByte(LED8x8.pattern1[0])
+    self.shifter.shiftByte(LED8x8.pattern2[0]) #send second byte
     self.shifter.pingLatch()
  
     
