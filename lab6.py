@@ -14,6 +14,9 @@ dataPin, latchPin, clockPin = 23, 24, 25
 
 theLED8x8= LED8x8(dataPin, latchPin, clockPin)
 
+
+
 while True:
-    theLED8x8.display(0,0)
-    time.sleep(0.001)
+  theLED8x8.display(0,0)
+  time.sleep(0.001)  
+
