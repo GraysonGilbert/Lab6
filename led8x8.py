@@ -25,7 +25,7 @@ class LED8x8():
     print(pattern[num])
     self.shifter.shiftByte(rows[num])
     print(rows[num]) #push first bite to second SR and send second byte
-    self.shifter.pingLatch() #ping latch
+    #self.shifter.pingLatch() #ping latch
     print("pinged latch")
     time.sleep(.001)
  
