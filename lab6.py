@@ -10,10 +10,10 @@ from led8x8 import LED8x8
 dataPin, latchPin, clockPin = 23, 24, 25
 
 # Pick a number sequence
-pattern2 =  [0b11111111]
+
 
 theLED8x8= LED8x8(dataPin, latchPin, clockPin)
 
 while True:
-    theLED8x8.display(pattern2)
+    theLED8x8.display()
     time.sleep(0.001)
