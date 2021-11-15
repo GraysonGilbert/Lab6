@@ -21,13 +21,13 @@ class LED8x8():
   def display(self,num):
     global pattern
     global rows
-    self.shifter.shiftByte(pattern[num])
-    #print(pattern[num])
-    self.shifter.shiftByte(rows[num])
-    #print(rows[num]) #push first bite to second SR and send second byte
+    self.shifter.shiftByte(LED8x8.pattern1[num])
+   
+    self.shifter.shiftByte(LED8x8.pattern2[num])
+
     self.shifter.pingLatch() #ping latch
 
-    #print("pinged latch")
+
     
     time.sleep(.001)
  
