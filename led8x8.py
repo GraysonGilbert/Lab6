@@ -22,8 +22,11 @@ class LED8x8():
     global pattern
     global rows
     self.shifter.shiftByte(LED8x8.pattern1[num1])
-    self.shifter.shiftByte(LED8x8.pattern2[num2]) #push first bite to second SR and send second byte
+    print(LED8x8.pattern1)
+    self.shifter.shiftByte(LED8x8.pattern2[num2])
+    print(LED8x8.pattern2) #push first bite to second SR and send second byte
     self.shifter.pingLatch() #ping latch
+    print("pinged latch")
  
     
     
