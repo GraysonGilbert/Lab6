@@ -26,8 +26,6 @@ class LED8x8():
     self.shifter.shiftByte(rows[num])
 
     self.shifter.pingLatch() #ping latch
-
-
     
     time.sleep(.001)
  
