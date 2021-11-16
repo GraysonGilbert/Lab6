@@ -24,8 +24,8 @@ class LED8x8():
     global pattern2
     global pattern
     global rows
-    self.shifter.shiftByte(pattern[num])
     self.shifter.shiftByte(rows[num])
+    self.shifter.shiftByte(pattern[num])
 
     self.shifter.pingLatch() #ping latch
     
