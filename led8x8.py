@@ -29,7 +29,7 @@ class LED8x8():
 
     self.shifter.pingLatch() #ping latch
     
-    time.sleep(.1)
+    time.sleep(.001)
  
     
     
